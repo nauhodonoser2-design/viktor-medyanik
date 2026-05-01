@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="uk" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Про проєкт</title>
+  </head>
+  <body style="font-family: &quot;Segoe UI&quot;, sans-serif; margin: 0%">
+    <p
+      style="
+        background-color: black;
+        color: white;
+        margin: 0%;
+        padding: 10px;
+        gap: 20px;
+      "
+    >
+      <a href="index.html" style="color: #f5f3f3; text-decoration: none"
+        >⭐Головна</a
+      >
+      |
+      <a href="inner/index.html" style="color: #f5f3f3; text-decoration: none"
+        >🌍Внутрішні планети</a
+      >
+      |
+      <a href="outer/index.html" style="color: #f5f3f3; text-decoration: none"
+        >🪐Зовнішні планети</a
+      >
+      |
+      <a href="about.html" style="color: #ffff00; text-decoration: none"
+        >ℹ️Про проект</a
+      >
+    </p>
+    <div style="max-width: 700px; margin: 0 auto; padding: 0.8px">
+      <h1 id="top" style="text-align: center; color: #6aeed5">📖Про проєкт</h1>
+      <hr />
+      <p>
+        Цей сайт — <strong>навчальний проєкт</strong> для відпрацювання навичок
+        роботи з <em>внутрішніми посиланнями</em> у мові розмітки HTML.
+      </p>
+      <h2>🤔Мета проєкту</h2>
+      <p>
+        Навчитися правильно будувати <strong>відносні шляхи</strong> між
+        HTML-файлами, що розміщені у різних папках на різних рівнях вкладеності.
+      </p>
+      <h2>⚙ Структура сайту</h2>
+      <p>
+        Сайт складається з <strong>12 сторінок</strong> у
+        <strong>3 рівнях</strong> вкладеності:
+      </p>
+      <pre
+        style="
+          background-color: #f4f4f4;
+          padding: 16px;
+          border-left: 4px solid #1a1a2e;
+          font-size: 14px;
+          line-height: 1.7;
+        "
+      >
+solar-system/
+│
+├── <a href="index.html">index.html</a>               ← Рівень 1: Головна
+├── <a href="about.html">about.html</a>               ← Рівень 1: Про проєкт
+│
+├── inner/                   ← папка «Внутрішні планети»
+│   ├── <a href="inner/index.html">index.html</a>           ← Рівень 2: Огляд
+│   ├── <a href="inner/mercury.html">mercury.html</a>         ← Рівень 2: Меркурій
+│   ├── <a href="inner/venus.html">venus.html</a>           ← Рівень 2: Венера
+│   └── <a href="inner/mars.html">mars.html</a>            ← Рівень 2: Марс
+│
+└── outer/                   ← папка «Зовнішні планети»
+│       ├── <a href="inner/earth/index.html">index.html</a>       ← Рівень 3: Земля
+│       └── <a href="inner/earth/moon.html">moon.html</a>        ← Рівень 3: Місяць
+│
+└── outer/                   ← папка «Зовнішні планети»
+    ├── <a href="outer/index.html">index.html</a>           ← Рівень 2: Огляд
+    ├── <a href="outer/jupiter.html">jupiter.html</a>         ← Рівень 2: Юпітер
+    │
+    └── saturn/              ← папка «Сатурн»
+        ├── <a href="outer/saturn/index.html">index.html</a>       ← Рівень 3: Сатурн
+        └── <a href="outer/saturn/rings.html">rings.html</a>       ← Рівень 3: Кільця
+      </pre>
+      <hr />
+      <p style="text-align: center">
+        <small>
+          <a href="index.html">👈На головну</a> |
+          <a href="#" style="color: #f5f3f3; text-decoration: none"></a>
+          <a href="#top">👆На початок</a></small
+        >
+      </p>
+    </div>
+  </body>
+</html>
